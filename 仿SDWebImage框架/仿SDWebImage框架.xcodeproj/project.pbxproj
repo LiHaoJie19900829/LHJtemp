@@ -21,6 +21,8 @@
 		C6D2C7111D90063900BF2FAF /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D2C7091D90063900BF2FAF /* AFURLRequestSerialization.m */; };
 		C6D2C7121D90063900BF2FAF /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D2C70B1D90063900BF2FAF /* AFURLResponseSerialization.m */; };
 		C6D2C7131D90063900BF2FAF /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D2C70D1D90063900BF2FAF /* AFURLSessionManager.m */; };
+		C6D2C7161D90075900BF2FAF /* DownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D2C7151D90075900BF2FAF /* DownloaderOperation.m */; };
+		C6D2C7191D90095300BF2FAF /* APPModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D2C7181D90095300BF2FAF /* APPModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,10 @@
 		C6D2C70B1D90063900BF2FAF /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		C6D2C70C1D90063900BF2FAF /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		C6D2C70D1D90063900BF2FAF /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		C6D2C7141D90075900BF2FAF /* DownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloaderOperation.h; sourceTree = "<group>"; };
+		C6D2C7151D90075900BF2FAF /* DownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloaderOperation.m; sourceTree = "<group>"; };
+		C6D2C7171D90095300BF2FAF /* APPModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPModel.h; sourceTree = "<group>"; };
+		C6D2C7181D90095300BF2FAF /* APPModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,8 @@
 				C6D2C6EE1D90051100BF2FAF /* LaunchScreen.storyboard */,
 				C6D2C6F11D90051100BF2FAF /* Info.plist */,
 				C6D2C6E01D90051100BF2FAF /* Supporting Files */,
+				C6D2C7171D90095300BF2FAF /* APPModel.h */,
+				C6D2C7181D90095300BF2FAF /* APPModel.m */,
 			);
 			path = "仿SDWebImage框架";
 			sourceTree = "<group>";
@@ -111,6 +119,8 @@
 		C6D2C6F71D90063000BF2FAF /* WebImage */ = {
 			isa = PBXGroup;
 			children = (
+				C6D2C7141D90075900BF2FAF /* DownloaderOperation.h */,
+				C6D2C7151D90075900BF2FAF /* DownloaderOperation.m */,
 			);
 			path = WebImage;
 			sourceTree = "<group>";
@@ -217,10 +227,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6D2C7191D90095300BF2FAF /* APPModel.m in Sources */,
 				C6D2C7111D90063900BF2FAF /* AFURLRequestSerialization.m in Sources */,
 				C6D2C6E81D90051100BF2FAF /* ViewController.m in Sources */,
 				C6D2C6E51D90051100BF2FAF /* AppDelegate.m in Sources */,
 				C6D2C6E21D90051100BF2FAF /* main.m in Sources */,
+				C6D2C7161D90075900BF2FAF /* DownloaderOperation.m in Sources */,
 				C6D2C7131D90063900BF2FAF /* AFURLSessionManager.m in Sources */,
 				C6D2C7121D90063900BF2FAF /* AFURLResponseSerialization.m in Sources */,
 				C6D2C70F1D90063900BF2FAF /* AFNetworkReachabilityManager.m in Sources */,
