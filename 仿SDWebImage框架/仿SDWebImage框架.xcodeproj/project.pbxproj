@@ -26,6 +26,7 @@
 		C6F22D311D92B099000E2AA8 /* DownloaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F22D301D92B099000E2AA8 /* DownloaderManager.m */; };
 		C6F22D341D92BDD4000E2AA8 /* NSString+path.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F22D331D92BDD4000E2AA8 /* NSString+path.m */; };
 		C6F22D371D92C566000E2AA8 /* UIImageView+LHJ.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F22D361D92C566000E2AA8 /* UIImageView+LHJ.m */; };
+		C6F22D3A1D92D451000E2AA8 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F22D391D92D451000E2AA8 /* NSString+Hash.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,8 @@
 		C6F22D331D92BDD4000E2AA8 /* NSString+path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+path.m"; sourceTree = "<group>"; };
 		C6F22D351D92C566000E2AA8 /* UIImageView+LHJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LHJ.h"; sourceTree = "<group>"; };
 		C6F22D361D92C566000E2AA8 /* UIImageView+LHJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LHJ.m"; sourceTree = "<group>"; };
+		C6F22D381D92D451000E2AA8 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		C6F22D391D92D451000E2AA8 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +139,8 @@
 				C6F22D331D92BDD4000E2AA8 /* NSString+path.m */,
 				C6F22D351D92C566000E2AA8 /* UIImageView+LHJ.h */,
 				C6F22D361D92C566000E2AA8 /* UIImageView+LHJ.m */,
+				C6F22D381D92D451000E2AA8 /* NSString+Hash.h */,
+				C6F22D391D92D451000E2AA8 /* NSString+Hash.m */,
 			);
 			path = WebImage;
 			sourceTree = "<group>";
@@ -248,6 +253,7 @@
 				C6D2C6E81D90051100BF2FAF /* ViewController.m in Sources */,
 				C6D2C6E51D90051100BF2FAF /* AppDelegate.m in Sources */,
 				C6D2C6E21D90051100BF2FAF /* main.m in Sources */,
+				C6F22D3A1D92D451000E2AA8 /* NSString+Hash.m in Sources */,
 				C6D2C7161D90075900BF2FAF /* DownloaderOperation.m in Sources */,
 				C6D2C7131D90063900BF2FAF /* AFURLSessionManager.m in Sources */,
 				C6D2C7121D90063900BF2FAF /* AFURLResponseSerialization.m in Sources */,

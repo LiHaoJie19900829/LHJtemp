@@ -18,12 +18,15 @@
 
 //全局队列
 @property (nonatomic, strong) NSOperationQueue *queue;
+////操作op缓存池()
+//@property (nonatomic, strong) NSMutableDictionary *OPsCache;
+///// 图片内存缓存、、、、、、还要和沙盒缓存一起用
+//@property (nonatomic, strong) NSMutableDictionary *imagesCache;
+
 //操作op缓存池()
-@property (nonatomic, strong) NSMutableDictionary *OPsCache;
+@property (nonatomic, strong) NSCache *OPsCache;
 /// 图片内存缓存、、、、、、还要和沙盒缓存一起用
-@property (nonatomic, strong) NSMutableDictionary *imagesCache;
-
-
+@property (nonatomic, strong) NSCache *imagesCache;
 
 @end
 
@@ -35,14 +38,32 @@
 -(instancetype)init {
 
     if (self = [super init]) {
-        self.OPsCache = [NSMutableDictionary dictionary];
+        self.OPsCache = [[NSCache alloc] init];
         
         self.queue =[[NSOperationQueue alloc] init];
-        self.imagesCache = [NSMutableDictionary dictionary];
+        self.imagesCache = [[NSCache alloc] init];
+        
+        //注册通知解决内存警告
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(clearMemeoy) name:UIApplicationDidReceiveMemoryWarningNotification object:nil];
+        
+        
     }
 
     return self;
 }
+
+
+/// 内存警告的主方法 : 提示 : 如果使用NSCache实现内存缓存,就需要把这个方法注销(NScache会自动释放内存)
+- (void)clearMemeoy
+{
+    //[self.imagesCache removeAllObjects];
+    //[self.OPsCache removeAllObjects];
+    [self.queue cancelAllOperations];
+}
+
+
+
 
 + (instancetype)sharedManager {
     
