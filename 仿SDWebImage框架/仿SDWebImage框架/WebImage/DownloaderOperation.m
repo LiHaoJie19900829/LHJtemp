@@ -7,7 +7,7 @@
 //
 
 #import "DownloaderOperation.h"
-
+#import "NSString+path.h"
 
 @interface DownloaderOperation ()
 
@@ -47,6 +47,16 @@
     NSURL *url = [NSURL URLWithString:self.URLString];
     NSData *data = [NSData dataWithContentsOfURL:url];
     UIImage *image = [UIImage imageWithData:data];
+    
+    
+    //实现沙盒缓存，，沙盒只能保存二级制数据，，NSdata
+    if (image) {
+        [data writeToFile:[self.URLString appendCaches] atomically:YES];
+    }
+    
+    
+    
+    
     
     //一般在耗时操作后拦截:在控制器中设置isCancelled为YEs,,,拦截就是不让block回调
     if (self.isCancelled) {
