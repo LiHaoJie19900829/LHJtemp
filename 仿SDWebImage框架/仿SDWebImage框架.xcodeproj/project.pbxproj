@@ -23,6 +23,7 @@
 		C6D2C7131D90063900BF2FAF /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D2C70D1D90063900BF2FAF /* AFURLSessionManager.m */; };
 		C6D2C7161D90075900BF2FAF /* DownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D2C7151D90075900BF2FAF /* DownloaderOperation.m */; };
 		C6D2C7191D90095300BF2FAF /* APPModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D2C7181D90095300BF2FAF /* APPModel.m */; };
+		C6F22D311D92B099000E2AA8 /* DownloaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F22D301D92B099000E2AA8 /* DownloaderManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,8 @@
 		C6D2C7151D90075900BF2FAF /* DownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloaderOperation.m; sourceTree = "<group>"; };
 		C6D2C7171D90095300BF2FAF /* APPModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPModel.h; sourceTree = "<group>"; };
 		C6D2C7181D90095300BF2FAF /* APPModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPModel.m; sourceTree = "<group>"; };
+		C6F22D2F1D92B099000E2AA8 /* DownloaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloaderManager.h; sourceTree = "<group>"; };
+		C6F22D301D92B099000E2AA8 /* DownloaderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloaderManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,8 @@
 			children = (
 				C6D2C7141D90075900BF2FAF /* DownloaderOperation.h */,
 				C6D2C7151D90075900BF2FAF /* DownloaderOperation.m */,
+				C6F22D2F1D92B099000E2AA8 /* DownloaderManager.h */,
+				C6F22D301D92B099000E2AA8 /* DownloaderManager.m */,
 			);
 			path = WebImage;
 			sourceTree = "<group>";
@@ -239,6 +244,7 @@
 				C6D2C7101D90063900BF2FAF /* AFSecurityPolicy.m in Sources */,
 				C6D2C70E1D90063900BF2FAF /* AFHTTPSessionManager.m in Sources */,
 				C6D2C6FF1D90063000BF2FAF /* YYClassInfo.m in Sources */,
+				C6F22D311D92B099000E2AA8 /* DownloaderManager.m in Sources */,
 				C6D2C6FE1D90063000BF2FAF /* NSObject+YYModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +394,7 @@
 				C6D2C6F61D90051100BF2FAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

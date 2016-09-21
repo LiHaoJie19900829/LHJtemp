@@ -14,6 +14,9 @@
 #import "DownloaderOperation.h"
 
 
+#import "DownloaderManager.h"
+
+
 
 @interface ViewController ()
 
@@ -54,11 +57,13 @@
     
     //判断俩次传入图片地址是否一样， 如果不一样，把正在执行的操作op取消掉（不相等取消，就是让回传的block不调用）
     if (![app.icon isEqualToString:self.lastURLString] && self.lastURLString != nil) {
-        [[self.OPsCache objectForKey:self.lastURLString] cancel];
         
+        //单列实现取消下载操作
+        [[DownloaderManager sharedManager] cancelDownloadingOperationWithLastURLString:self.lastURLString];
         
-        //移除op操作，，同时要把op缓存池中也删除
-        [self.OPsCache removeObjectForKey:self.lastURLString];
+//        [[self.OPsCache objectForKey:self.lastURLString] cancel];
+//        //移除op操作，，同时要把op缓存池中也删除
+//        [self.OPsCache removeObjectForKey:self.lastURLString];
         
     }
     
@@ -66,12 +71,21 @@
     self.lastURLString = app.icon;
     
     
-    DownloaderOperation *op = [DownloaderOperation downloaderOperationWithURLString:app.icon successBlock:^(UIImage *image) {
+//    DownloaderOperation *op = [DownloaderOperation downloaderOperationWithURLString:app.icon successBlock:^(UIImage *image) {
+//        self.iconImageView.image = image;
+//    }];
+//    
+//    [self.OPsCache setObject:op forKey:app.icon];
+//    [self.queue addOperation:op];
+    
+    
+    //单例downloadermanager类实现下载功能
+    
+    [[DownloaderManager sharedManager] downloadImageWithURLString:app.icon successBlock:^(UIImage *image) {
         self.iconImageView.image = image;
     }];
     
-    [self.OPsCache setObject:op forKey:app.icon];
-    [self.queue addOperation:op];
+    
     
     
 }

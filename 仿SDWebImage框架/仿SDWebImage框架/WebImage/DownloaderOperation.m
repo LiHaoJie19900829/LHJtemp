@@ -48,24 +48,11 @@
     NSData *data = [NSData dataWithContentsOfURL:url];
     UIImage *image = [UIImage imageWithData:data];
     
-    
-    
-    
-    
-    
-    
-    
     //一般在耗时操作后拦截:在控制器中设置isCancelled为YEs,,,拦截就是不让block回调
     if (self.isCancelled) {
         NSLog(@"取消   %@",self.URLString);
         return ;
     }
-    
-    
-    
-    
-    
-    
     
     [[NSOperationQueue mainQueue] addOperationWithBlock:^{
         
