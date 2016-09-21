@@ -38,6 +38,7 @@
         self.OPsCache = [NSMutableDictionary dictionary];
         
         self.queue =[[NSOperationQueue alloc] init];
+        self.imagesCache = [NSMutableDictionary dictionary];
     }
 
     return self;
@@ -78,14 +79,15 @@
     
     
     
-    
+    // 判断要下载的图片对应的下载操作有没有,如果有,直接返回,不再建立下载操作.反之,就建立下载操作
     if ([self.OPsCache objectForKey:URLString]) {
         return;
     }
     
     //定义单例的bolck，，，用来传递单例里面还需要加的一些操作，
     void(^managerBlock)() = ^(UIImage *image){
-    
+        
+         NSLog(@"从网络加载...%@",URLString);
         if (successBlock) {
             successBlock(image);//block是一个匿名函数，，所以可以可以直接调用：如successBlock(image);
         }

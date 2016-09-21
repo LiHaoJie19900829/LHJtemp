@@ -25,6 +25,7 @@
 		C6D2C7191D90095300BF2FAF /* APPModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D2C7181D90095300BF2FAF /* APPModel.m */; };
 		C6F22D311D92B099000E2AA8 /* DownloaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F22D301D92B099000E2AA8 /* DownloaderManager.m */; };
 		C6F22D341D92BDD4000E2AA8 /* NSString+path.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F22D331D92BDD4000E2AA8 /* NSString+path.m */; };
+		C6F22D371D92C566000E2AA8 /* UIImageView+LHJ.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F22D361D92C566000E2AA8 /* UIImageView+LHJ.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,8 @@
 		C6F22D301D92B099000E2AA8 /* DownloaderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloaderManager.m; sourceTree = "<group>"; };
 		C6F22D321D92BDD4000E2AA8 /* NSString+path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+path.h"; sourceTree = "<group>"; };
 		C6F22D331D92BDD4000E2AA8 /* NSString+path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+path.m"; sourceTree = "<group>"; };
+		C6F22D351D92C566000E2AA8 /* UIImageView+LHJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LHJ.h"; sourceTree = "<group>"; };
+		C6F22D361D92C566000E2AA8 /* UIImageView+LHJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LHJ.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,8 @@
 				C6F22D301D92B099000E2AA8 /* DownloaderManager.m */,
 				C6F22D321D92BDD4000E2AA8 /* NSString+path.h */,
 				C6F22D331D92BDD4000E2AA8 /* NSString+path.m */,
+				C6F22D351D92C566000E2AA8 /* UIImageView+LHJ.h */,
+				C6F22D361D92C566000E2AA8 /* UIImageView+LHJ.m */,
 			);
 			path = WebImage;
 			sourceTree = "<group>";
@@ -238,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6D2C7191D90095300BF2FAF /* APPModel.m in Sources */,
+				C6F22D371D92C566000E2AA8 /* UIImageView+LHJ.m in Sources */,
 				C6D2C7111D90063900BF2FAF /* AFURLRequestSerialization.m in Sources */,
 				C6D2C6E81D90051100BF2FAF /* ViewController.m in Sources */,
 				C6D2C6E51D90051100BF2FAF /* AppDelegate.m in Sources */,
